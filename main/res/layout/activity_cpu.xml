@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Declaração do layout principal do arquivo XML -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    tools:context=".CpuActivity">
+    android:layout_width="match_parent"             <!-- Largura do LinearLayout ocupa toda a largura da tela -->
+    android:layout_height="match_parent"            <!-- Altura do LinearLayout ocupa toda a altura da tela -->
+    android:orientation="vertical"                   <!-- Orientação vertical para os filhos do LinearLayout -->
+    tools:context=".CpuActivity">                   <!-- Contexto da atividade para ferramentas de design -->
 
+    <!-- GridLayout para organizar os botões de cartas em uma grade -->
     <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        app:columnCount="4"
-        app:rowCount="4">
+        android:id="@+id/gridLayout"                  <!-- ID do GridLayout para referência no código -->
+        android:layout_width="match_parent"           <!-- Largura do GridLayout ocupa toda a largura da tela -->
+        android:layout_height="match_parent"          <!-- Altura do GridLayout ocupa toda a altura da tela -->
+        android:padding="16dp"                        <!-- Preenchimento interno de 16dp ao redor do GridLayout -->
+        app:columnCount="4"                           <!-- Número de colunas na grade (4 colunas) -->
+        app:rowCount="4">                             <!-- Número de linhas na grade (4 linhas) -->
 
-
-
-        <!-- Declaração manual dos botões -->
+        <!-- Declaração manual dos botões como cartas -->
         <ImageButton
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_height="200dp"
-            app:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            android:src="@drawable/card1"
-            android:scaleType="centerInside"/>
+            android:id="@+id/button1"                  <!-- ID do primeiro botão de imagem -->
+            android:layout_width="0dp"                 <!-- Largura do botão se ajusta automaticamente -->
+            android:layout_height="200dp"              <!-- Altura do botão definida como 200dp -->
+            app:layout_columnWeight="1"                <!-- Peso da coluna para distribuição igual -->
+            android:layout_margin="8dp"                <!-- Margem de 8dp ao redor do botão -->
+            android:src="@drawable/card1"              <!-- Imagem da carta 1 -->
+            android:scaleType="centerInside"/>          <!-- Tipo de escala da imagem -->
+
         <ImageButton
             android:id="@+id/button2"
             android:layout_width="0dp"
