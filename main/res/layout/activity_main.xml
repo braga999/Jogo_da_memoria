@@ -1,57 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Declaração do layout principal do arquivo XML -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    tools:context=".MainActivity"
-    android:background="@drawable/champions_background">
+    android:id="@+id/main"                       <!-- ID do LinearLayout principal -->
+    android:layout_width="match_parent"          <!-- Largura do layout principal ocupa toda a largura da tela -->
+    android:layout_height="match_parent"         <!-- Altura do layout principal ocupa toda a altura da tela -->
+    android:orientation="vertical"                <!-- Orientação vertical para os filhos do LinearLayout -->
+    android:gravity="center"                      <!-- Alinhamento central dos filhos no LinearLayout -->
+    android:padding="16dp"                        <!-- Preenchimento interno de 16dp ao redor do layout -->
+    tools:context=".MainActivity"                <!-- Contexto da atividade para ferramentas de design -->
+    android:background="@drawable/champions_background"> <!-- Fundo do layout definido por um recurso drawable -->
 
+    <!-- Título do jogo -->
     <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jogo da Memória"
-        android:textSize="24sp"
-        android:textColor="@color/white"
-        android:layout_gravity="center_horizontal"
-        android:paddingBottom="24dp"
-        android:textStyle="bold" />
+        android:id="@+id/textViewTitle"            <!-- ID do TextView para referência no código -->
+        android:layout_width="wrap_content"        <!-- Largura do TextView se ajusta ao conteúdo -->
+        android:layout_height="wrap_content"       <!-- Altura do TextView se ajusta ao conteúdo -->
+        android:text="Jogo da Memória"             <!-- Texto exibido no TextView -->
+        android:textSize="24sp"                    <!-- Tamanho do texto em 24sp -->
+        android:textColor="@color/white"           <!-- Cor do texto (branco) -->
+        android:layout_gravity="center_horizontal"  <!-- Alinhamento horizontal central do TextView -->
+        android:paddingBottom="24dp"               <!-- Margem inferior de 24dp abaixo do TextView -->
+        android:textStyle="bold"                    <!-- Estilo do texto em negrito -->
+    />
 
+    <!-- GridLayout para organizar os botões em uma grade -->
     <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        app:columnCount="2"
-        app:rowCount="1"
-        android:layout_gravity="center">
+        android:id="@+id/gridLayout"                <!-- ID do GridLayout para referência no código -->
+        android:layout_width="match_parent"         <!-- Largura do GridLayout ocupa toda a largura da tela -->
+        android:layout_height="wrap_content"        <!-- Altura do GridLayout se ajusta ao conteúdo -->
+        android:padding="16dp"                      <!-- Preenchimento interno de 16dp ao redor do GridLayout -->
+        app:columnCount="2"                         <!-- Número de colunas na grade -->
+        app:rowCount="1"                            <!-- Número de linhas na grade -->
+        android:layout_gravity="center">           <!-- Alinhamento central do GridLayout -->
 
+        <!-- Botão para jogar contra a máquina -->
         <Button
-            android:id="@+id/button_cpu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            android:padding="16dp"
-            android:text="Jogar Contra a Máquina"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_columnWeight="1" />
+            android:id="@+id/button_cpu"             <!-- ID do botão para jogar contra a máquina -->
+            android:layout_width="0dp"               <!-- Largura definida para 0dp, será ajustada automaticamente -->
+            android:layout_height="wrap_content"     <!-- Altura do botão se ajusta ao conteúdo -->
+            android:background="@color/black"        <!-- Cor de fundo do botão (preto) -->
+            android:padding="16dp"                   <!-- Preenchimento interno de 16dp ao redor do botão -->
+            android:text="Jogar Contra a Máquina"    <!-- Texto exibido no botão -->
+            android:textColor="@color/white"         <!-- Cor do texto (branco) -->
+            android:textSize="16sp"                  <!-- Tamanho do texto em 16sp -->
+            app:layout_columnWeight="1"              <!-- Peso da coluna, distribuindo igualmente os botões -->
+        />
 
+        <!-- Botão para jogar PvP -->
         <Button
-            android:id="@+id/button_pvp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            android:padding="16dp"
-            android:text="Jogar PvP"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_columnWeight="1" />
+            android:id="@+id/button_pvp"              <!-- ID do botão para jogar PvP -->
+            android:layout_width="0dp"               <!-- Largura definida para 0dp, será ajustada automaticamente -->
+            android:layout_height="wrap_content"     <!-- Altura do botão se ajusta ao conteúdo -->
+            android:background="@color/black"        <!-- Cor de fundo do botão (preto) -->
+            android:padding="16dp"                   <!-- Preenchimento interno de 16dp ao redor do botão -->
+            android:text="Jogar PvP"                  <!-- Texto exibido no botão -->
+            android:textColor="@color/white"         <!-- Cor do texto (branco) -->
+            android:textSize="16sp"                  <!-- Tamanho do texto em 16sp -->
+            app:layout_columnWeight="1"              <!-- Peso da coluna, distribuindo igualmente os botões -->
+        />
 
     </androidx.gridlayout.widget.GridLayout>
 
