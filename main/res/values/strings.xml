@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="player_wins">Player %1$d ganhou!</string>
+    <string name="cpu_wins">CPU ganhou!</string>
+    <string name="draw">empate!</string>
+    <string name="game_over">Fim de Jogo</string>
+    <string name="game_over_message">O jogo acabou! Vencedor: %1$s</string>
+    <string name="player1_wins">Jogador 1 venceu!</string>
+    <string name="player2_wins">Jogador 2 venceu!</string>
+
+</resources>
