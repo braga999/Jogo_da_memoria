@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PvPActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:columnCount="4"
+        app:rowCount="4">
+
+        <ImageButton
+            android:id="@+id/pvp_button1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card1"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button2"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card2"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button3"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card3"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button4"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card4"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button5"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card5"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button6"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card6"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button7"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card7"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button8"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card8"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button9"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card1"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button10"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card2"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button11"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card3"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button12"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card4"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button13"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card5"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button14"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card6"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button15"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card7"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/pvp_button16"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/card8"
+            android:scaleType="centerInside"/>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>
