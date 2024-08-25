@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Declaração do layout principal do arquivo XML -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".PvPActivity">
+    android:layout_width="match_parent"  <!-- Largura do layout principal ocupa toda a largura da tela -->
+    android:layout_height="match_parent" <!-- Altura do layout principal ocupa toda a altura da tela -->
+    android:orientation="vertical"       <!-- Orientação vertical para os filhos do LinearLayout -->
+    tools:context=".PvPActivity">       <!-- Contexto da atividade para ferramentas de design -->
 
+    <!-- GridLayout para organizar os botões em uma grade -->
     <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        app:columnCount="4"
-        app:rowCount="4">
+        android:id="@+id/gridLayout"         <!-- ID do GridLayout para referência no código -->
+        android:layout_width="match_parent"  <!-- Largura do GridLayout ocupa toda a largura da tela -->
+        android:layout_height="match_parent" <!-- Altura do GridLayout ocupa toda a altura da tela -->
+        android:padding="16dp"               <!-- Preenchimento interno de 16dp ao redor do GridLayout -->
+        app:columnCount="4"                  <!-- Número de colunas na grade -->
+        app:rowCount="4">                     <!-- Número de linhas na grade -->
 
+        <!-- Botões de imagem para o jogo da memória -->
         <ImageButton
-            android:id="@+id/pvp_button1"
-            android:layout_width="0dp"
-            android:layout_height="200dp"
-            app:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            android:src="@drawable/card1"
-            android:scaleType="centerInside"/>
+            android:id="@+id/pvp_button1"      <!-- ID do primeiro botão -->
+            android:layout_width="0dp"         <!-- Largura definida para 0dp, será ajustada automaticamente -->
+            android:layout_height="200dp"      <!-- Altura do botão de 200dp -->
+            app:layout_columnWeight="1"        <!-- Peso da coluna, distribuindo igualmente os botões -->
+            android:layout_margin="8dp"        <!-- Margem externa de 8dp ao redor do botão -->
+            android:src="@drawable/card1"      <!-- Imagem do botão (card1) -->
+            android:scaleType="centerInside"/>  <!-- Escala a imagem para caber dentro do botão -->
 
+        <!-- Repetição dos ImageButtons para cada carta no jogo -->
         <ImageButton
             android:id="@+id/pvp_button2"
             android:layout_width="0dp"
@@ -87,6 +91,7 @@
             android:src="@drawable/card8"
             android:scaleType="centerInside"/>
 
+        <!-- Botões adicionais para completar a grade, com imagens correspondentes -->
         <ImageButton
             android:id="@+id/pvp_button9"
             android:layout_width="0dp"
